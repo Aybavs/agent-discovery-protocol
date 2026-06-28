@@ -1,7 +1,7 @@
 ---
 title: "RFC-0001: Agent Discovery Protocol"
 status: "Outline"
-category: "Standards Track / Experimental"
+category: "Experimental — Outline"
 project-codename: "ADP"
 date: "2026-06-27"
 author: "Aybars Keleş"
