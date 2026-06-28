@@ -4,10 +4,10 @@ This directory contains the main working drafts.
 
 ## Current documents
 
-- `rfc-0000-problem-statement.md` — English problem statement placeholder.
-- `rfc-0001-agent-discovery-protocol.md` — technical specification outline.
-- `rfc-0002-rationale-and-design-decisions.md` — design rationale outline.
-- `manifesto.md` — vision document outline.
+- `rfc-0000-problem-statement.md` — canonical English problem statement working draft.
+- `rfc-0001-agent-discovery-protocol.md` — design outline for the future technical specification.
+- `rfc-0002-rationale-and-design-decisions.md` — planned design rationale outline.
+- `manifesto.md` — planned vision document outline.
 
 ## Translations
 
@@ -17,7 +17,7 @@ Translations are stored under:
 translations/
 ```
 
-The Turkish version of RFC-0000 is currently available at:
+The Turkish translation of RFC-0000 is available at:
 
 ```text
 translations/tr/rfc-0000-problem-statement.tr.md
