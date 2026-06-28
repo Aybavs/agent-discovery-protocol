@@ -2,7 +2,7 @@
 
 **Project status:** Independent working draft  
 **Project codename:** ADP  
-**Current focus:** RFC-0001 design constraints and open discovery-design decisions
+**Current focus:** RFC-0000 first review and RFC-0001 design questions
 
 Agent Discovery Protocol is an early, vendor-neutral proposal for discovering machine-consumable service interfaces on the web.
 
