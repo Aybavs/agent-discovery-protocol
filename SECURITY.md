@@ -31,9 +31,11 @@ The current drafts follow these principles:
 
 ## Reporting channel
 
-A dedicated security reporting channel is **not yet configured**. Until one is set up, please open a **public issue** for non-sensitive specification concerns.
+A dedicated security reporting channel is **not yet configured**.
 
-If you believe a concern is sensitive and should not be disclosed publicly at this stage, please note that in minimal terms in an issue and request a private channel; a private reporting path will be added as the project matures (for example, GitHub private vulnerability reporting or a dedicated security contact address).
+For non-sensitive specification concerns, please open a **public issue**.
+
+For sensitive concerns, please do not include sensitive details in public issues. Instead, contact the maintainer through [GitHub profile contact methods](https://github.com/Aybavs) until a dedicated reporting channel is configured.
 
 ## Responsible disclosure
 
