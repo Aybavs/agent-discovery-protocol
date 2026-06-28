@@ -1,7 +1,7 @@
 ---
 title: "RFC-0001: Agent Discovery Protocol"
 status: "Outline"
-category: "Experimental — Outline"
+category: "Experimental — Design Outline"
 project-codename: "ADP"
 date: "2026-06-27"
 author: "Aybars Keleş"
@@ -32,7 +32,22 @@ The mechanism is intended to answer one question:
 
 > Given a domain name, where should an autonomous agent begin discovering the service's machine-consumable interfaces?
 
-## 2. Goals
+## 2. Design Constraints
+
+This specification is constrained by RFC-0000.
+
+A valid design must:
+
+- solve only the cold-start service-interface discovery problem,
+- remain protocol-neutral,
+- point to authoritative interface descriptions instead of duplicating them,
+- avoid defining capability or intent semantics,
+- avoid implying authorization or trust,
+- allow operators to control what is discoverable,
+- treat descriptive metadata as untrusted input,
+- remain small enough to be implemented by ordinary service operators.
+
+## 3. Goals
 
 The protocol should:
 
@@ -45,7 +60,7 @@ The protocol should:
 - support extension without breaking existing consumers,
 - avoid implying authorization or trust.
 
-## 3. Non-goals
+## 4. Non-goals
 
 This protocol does not define:
 
@@ -60,7 +75,7 @@ This protocol does not define:
 - agent runtime behavior,
 - a replacement for OpenAPI, MCP, A2A, GraphQL, OAuth, or existing documentation formats.
 
-## 4. Discovery Resource
+## 5. Discovery Resource
 
 This section will define the discovery resource location.
 
@@ -80,7 +95,7 @@ Candidate forms may include:
 
 The final name must be chosen carefully to avoid conflicts with existing conventions.
 
-## 5. Media Type
+## 6. Media Type
 
 This section will define the expected response media type.
 
@@ -93,7 +108,7 @@ application/agent-discovery+json
 
 The final choice is unresolved.
 
-## 6. Discovery Document Model
+## 7. Discovery Document Model
 
 This section will define the top-level document structure.
 
@@ -107,7 +122,7 @@ The initial model is expected to contain only:
 
 The document should point to authoritative resources rather than duplicating them.
 
-## 7. Link Relations
+## 8. Link Relations
 
 This section will define how the document represents links to:
 
@@ -121,7 +136,7 @@ This section will define how the document represents links to:
 - terms and policy documents,
 - future extension documents.
 
-## 8. Processing Rules
+## 9. Processing Rules
 
 This section will define consumer behavior, including:
 
@@ -134,7 +149,7 @@ This section will define consumer behavior, including:
 - error handling,
 - version negotiation, if any.
 
-## 9. Producer Requirements
+## 10. Producer Requirements
 
 This section will define requirements for service operators publishing a discovery document.
 
@@ -147,7 +162,7 @@ Expected principles:
 - keep linked resources authoritative,
 - provide stable URLs when possible.
 
-## 10. Consumer Requirements
+## 11. Consumer Requirements
 
 This section will define requirements for agents and other machine consumers.
 
@@ -159,7 +174,7 @@ Expected principles:
 - validate linked resources according to their own protocols,
 - apply local security and user-consent policies before taking action.
 
-## 11. Security Considerations
+## 12. Security Considerations
 
 This section will cover:
 
@@ -174,7 +189,7 @@ This section will cover:
 - trust separation,
 - operator control.
 
-## 12. Privacy Considerations
+## 13. Privacy Considerations
 
 This section will cover:
 
@@ -182,13 +197,13 @@ This section will cover:
 - whether publishing interface links creates observability risks,
 - how operators may minimize exposure.
 
-## 13. IANA Considerations
+## 14. IANA Considerations
 
 If the final design uses a `.well-known` URI, this section will discuss registration considerations.
 
 If a custom media type is used, this section will discuss media type registration.
 
-## 14. Examples
+## 15. Examples
 
 This section will include:
 
@@ -197,12 +212,19 @@ This section will include:
 - a service with only one machine interface,
 - a service that points to existing standards without duplicating them.
 
-## 15. Open Issues
+## 16. Open Design Questions
 
-- Discovery resource name.
-- Media type.
+The following design decisions are tracked as GitHub issues and must be resolved before the corresponding sections of this document can be specified.
+
+| Issue | Question | Section |
+|---|---|---|
+| [#1](https://github.com/Aybavs/agent-discovery-protocol/issues/1) | Choose naming strategy for the discovery resource | §5 |
+| [#2](https://github.com/Aybavs/agent-discovery-protocol/issues/2) | Decide whether Web Linking (RFC 8288) should be referenced | §8 |
+| [#3](https://github.com/Aybavs/agent-discovery-protocol/issues/3) | Decide media type for the discovery document | §6 |
+| [#4](https://github.com/Aybavs/agent-discovery-protocol/issues/4) | Decide whether JSON Schema belongs in the initial specification | §7 |
+| [#5](https://github.com/Aybavs/agent-discovery-protocol/issues/5) | Decide whether signatures belong in core or as an extension | §12 |
+
+Additional open questions:
+
 - Versioning strategy.
-- Link representation.
-- Relation to Web Linking.
-- Whether to define a JSON Schema in the initial specification.
-- Whether signatures belong in core or an extension.
+- Link representation details.
