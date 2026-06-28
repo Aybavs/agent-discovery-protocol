@@ -2,7 +2,7 @@
 
 **Project status:** Independent working draft  
 **Project codename:** ADP  
-**Current focus:** Problem statement and discovery requirements
+**Current focus:** RFC-0001 design constraints and open discovery-design decisions
 
 Agent Discovery Protocol is an early, vendor-neutral proposal for discovering machine-consumable service interfaces on the web.
 
@@ -28,7 +28,7 @@ This project explores that bootstrapping problem.
 |---|---|---|
 | [`RFC-0000 — Problem Statement`](docs/rfc-0000-problem-statement.md) | Working Draft | Explains the discovery gap without proposing a solution. |
 | [`RFC-0000 — Problem Statement (TR)`](translations/tr/rfc-0000-problem-statement.tr.md) | Working Draft (Translation) | Turkish working translation of the problem statement. |
-| [`RFC-0001 — Agent Discovery Protocol`](docs/rfc-0001-agent-discovery-protocol.md) | Outline | Planned technical specification. |
+| [`RFC-0001 — Agent Discovery Protocol`](docs/rfc-0001-agent-discovery-protocol.md) | Design Outline | Planned technical specification; design constraints and open decisions are being discussed. |
 | [`RFC-0002 — Rationale and Design Decisions`](docs/rfc-0002-rationale-and-design-decisions.md) | Outline | Planned design rationale. |
 | [`Manifesto`](docs/manifesto.md) | Outline | Vision and long-term direction. |
 
@@ -40,7 +40,7 @@ This project is not an official IETF document.
 
 The `RFC-0000`, `RFC-0001`, and `RFC-0002` labels are internal project identifiers, not RFC Editor numbers.
 
-The current goal is to develop the idea in the open, gather feedback, and refine the problem statement before proposing a concrete specification.
+The current goal is to keep RFC-0000 stable as the canonical problem statement, collect feedback through design issues, and define the design constraints for RFC-0001 before specifying the discovery mechanism.
 
 ## Design principles
 
