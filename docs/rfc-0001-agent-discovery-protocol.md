@@ -97,16 +97,11 @@ The final name must be chosen carefully to avoid conflicts with existing convent
 
 ## 6. Media Type
 
-This section will define the expected response media type.
+The discovery document uses the `application/json` media type.
 
-Possible candidates:
+A custom media type such as `application/agent-discovery+json` is intentionally deferred. The initial specification prioritizes broad compatibility, simple deployment, and low adoption cost over specialized content negotiation semantics.
 
-```text
-application/json
-application/agent-discovery+json
-```
-
-The final choice is unresolved.
+Future versions MAY define or register a more specific media type if the document model becomes stable enough to justify it.
 
 ## 7. Discovery Document Model
 
@@ -220,7 +215,6 @@ The following design decisions are tracked as GitHub issues and must be resolved
 |---|---|---|
 | [#1](https://github.com/Aybavs/agent-discovery-protocol/issues/1) | Choose naming strategy for the discovery resource | §5 |
 | [#2](https://github.com/Aybavs/agent-discovery-protocol/issues/2) | Decide whether Web Linking (RFC 8288) should be referenced | §8 |
-| [#3](https://github.com/Aybavs/agent-discovery-protocol/issues/3) | Decide media type for the discovery document | §6 |
 | [#4](https://github.com/Aybavs/agent-discovery-protocol/issues/4) | Decide whether JSON Schema belongs in the initial specification | §7 |
 | [#5](https://github.com/Aybavs/agent-discovery-protocol/issues/5) | Decide whether signatures belong in core or as an extension | §12 |
 
