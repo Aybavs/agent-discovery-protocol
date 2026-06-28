@@ -509,12 +509,14 @@ The following documents point to the existing standards and conventions that for
 
 ## Appendix C. About This Document
 
-**Document type:** Problem Statement (independent working draft, IETF Internet-Draft style)
-**Document identifier:** RFC-0000 (internal project number)
-**Project codename:** ADP
-**Status:** Working Draft — open for discussion
-**Related document:** The proposed solution is defined in RFC-0001.
-**Author:** Aybars Mete Keleş (Independent)
-**Date:** 27 June 2026
+| Field | Value |
+|---|---|
+| Document type | Problem Statement |
+| Document identifier | RFC-0000 |
+| Project codename | ADP |
+| Status | Working Draft — open for discussion |
+| Related document | RFC-0001 |
+| Author | Aybars Mete Keleş |
+| Date | 27 June 2026 |
 
 > This document is not an IETF document and is not published by any standards body. It is an independent working draft, published for open discussion, that adopts the writing conventions of an IETF Internet-Draft.

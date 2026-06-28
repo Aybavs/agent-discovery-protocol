@@ -511,12 +511,14 @@ Aşağıdaki belgeler, bu çalışmanın bağlamını oluşturan mevcut standart
 
 ## Ek C. Belge Hakkında
 
-**Belge Türü:** Problem Bildirimi (Bağımsız Çalışma Taslağı, IETF Internet-Draft stili)
-**Belge Tanımlayıcısı:** RFC-0000 (dahili proje numarası)
-**Proje Kod Adı:** ADP
-**Durum:** Çalışma Taslağı — Tartışmaya Açık
-**İlişkili Belge:** Önerilen çözüm RFC-0001'de tanımlanmaktadır.
-**Yazar:** Aybars Mete Keleş (Bağımsız)
-**Tarih:** 27 Haziran 2026
+| Alan | Değer |
+|---|---|
+| Belge türü | Problem Bildirimi |
+| Belge tanımlayıcısı | RFC-0000 |
+| Proje kod adı | ADP |
+| Durum | Çalışma Taslağı — tartışmaya açık |
+| İlişkili belge | RFC-0001 |
+| Yazar | Aybars Mete Keleş |
+| Tarih | 27 Haziran 2026 |
 
 > Bu belge bir IETF belgesi değildir ve herhangi bir standart organının resmî yayını olarak sunulmamaktadır. IETF Internet-Draft yazım geleneğini benimseyen, halka açık tartışma amaçlı bağımsız bir çalışma taslağıdır.
