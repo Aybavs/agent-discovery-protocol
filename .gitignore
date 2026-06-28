@@ -6,10 +6,16 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Claude Code
+# AI agent configs
 CLAUDE.md
 CLAUDE.local.md
 .claude/
+AGENTS.md
+GEMINI.md
+COPILOT.md
+.gemini/
+.copilot/
+.codex/
 
 # Temporary files
 *.tmp
