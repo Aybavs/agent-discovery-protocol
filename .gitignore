@@ -1,0 +1,16 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# Claude Code
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+
+# Temporary files
+*.tmp
+*.bak
