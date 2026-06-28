@@ -25,12 +25,12 @@ This project explores that bootstrapping problem.
 ## Documents
 
 | Document | Status | Description |
-|---|---:|---|
-| [`RFC-0000 — Problem Statement`](docs/rfc-0000-problem-statement.md) | Working draft / English | Explains the discovery gap without proposing a solution. |
-| [`RFC-0000 — Problem Statement (TR)`](translations/tr/rfc-0000-problem-statement.tr.md) | Translation | Turkish working translation of the problem statement. |
-| [`RFC-0001 — Agent Discovery Protocol`](docs/rfc-0001-agent-discovery-protocol.md) | Planned outline | Planned technical specification. |
-| [`RFC-0002 — Rationale and Design Decisions`](docs/rfc-0002-rationale-and-design-decisions.md) | Planned outline | Planned design rationale. |
-| [`Manifesto`](docs/manifesto.md) | Planned outline | Vision and long-term direction. |
+|---|---|---|
+| [`RFC-0000 — Problem Statement`](docs/rfc-0000-problem-statement.md) | Working Draft | Explains the discovery gap without proposing a solution. |
+| [`RFC-0000 — Problem Statement (TR)`](translations/tr/rfc-0000-problem-statement.tr.md) | Working Draft (Translation) | Turkish working translation of the problem statement. |
+| [`RFC-0001 — Agent Discovery Protocol`](docs/rfc-0001-agent-discovery-protocol.md) | Outline | Planned technical specification. |
+| [`RFC-0002 — Rationale and Design Decisions`](docs/rfc-0002-rationale-and-design-decisions.md) | Outline | Planned design rationale. |
+| [`Manifesto`](docs/manifesto.md) | Outline | Vision and long-term direction. |
 
 The English `RFC-0000` is the **canonical** version of the problem statement. The Turkish document is a translation of it.
 
