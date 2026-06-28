@@ -98,6 +98,14 @@ agent-discovery-protocol/
 
 The files under `schema/` and `examples/` are **non-normative placeholders** and do not define the protocol. The discovery document format is intentionally not specified until `RFC-0001`.
 
+## Review wanted
+
+The project is currently looking for feedback on RFC-0000, the problem statement.
+
+The most useful feedback right now is about whether the problem is described clearly, whether the scope is narrow enough, and whether the relationship to existing mechanisms such as OpenAPI, MCP, A2A, and llms.txt is fair.
+
+Technical solution details are intentionally deferred to RFC-0001.
+
 ## Contributing
 
 Feedback is welcome.
