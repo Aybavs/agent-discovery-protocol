@@ -29,6 +29,27 @@ You can contribute by:
 - improving examples,
 - improving translations.
 
+## Branch workflow
+
+This project uses a lightweight GitHub Flow model.
+
+- `main` is the only long-lived branch and represents the current public working draft.
+- Changes should be made in short-lived topic branches and proposed through pull requests.
+- Contributors without write access should create a fork and open a pull request from a branch in that fork.
+- Maintainers with write access may create topic branches directly in the upstream repository.
+- Direct pushes to `main` are not part of the normal contribution workflow.
+- Topic branches should be deleted after they are merged.
+
+Branch names should be lowercase, concise, and describe the change. For example:
+
+```text
+docs/rfc-0001-media-type
+docs/rfc-0000-clarify-a2a
+chore/add-markdown-lint
+```
+
+The project does not use long-lived `develop`, release, or document-specific branches.
+
 ## Before proposing a large change
 
 For major changes, please open an issue or discussion first.
@@ -148,6 +169,24 @@ A pull request should explain:
 - which document section it affects,
 - whether it changes scope,
 - whether it introduces a new requirement.
+
+The `main` branch should be protected against deletion and force pushes. Pull requests should target `main`, all review conversations should be resolved before merge, and pull requests should be squash-merged to keep the history linear. While the project has one active maintainer, a second approval is not required. If another active maintainer joins, at least one approving review should be required for changes to `main`.
+
+## Release versioning
+
+Repository releases are tagged from `main`. The project does not maintain separate release branches.
+
+During the working-draft phase, releases use [Semantic Versioning](https://semver.org/) in the `0.y.z` range:
+
+- `v0.1.0` will mark the first coherent and implementable RFC-0001 working draft.
+- A minor release, such as `v0.2.0`, indicates a change to the discovery model, normative processing rules, or conformance requirements.
+- A patch release, such as `v0.1.1`, is reserved for editorial corrections and other changes that do not alter normative behavior.
+- Breaking changes may occur before `v1.0.0` and must be documented in the release notes.
+- `v1.0.0` will require a stable core specification informed by implementation experience; document completion alone is not sufficient.
+
+RFC identifiers such as `RFC-0000` and `RFC-0001` identify documents in this project; they are not release versions. Until the project becomes an actual IETF submission, it does not use Internet-Draft revision suffixes such as `-00` or `-01`.
+
+Changes accumulate under `Unreleased` in `CHANGELOG.md`. When a release is created, its entries should be moved under a dated version heading and the corresponding Git tag and GitHub Release should be created from `main`.
 
 ## Translations
 

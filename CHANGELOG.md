@@ -23,6 +23,7 @@ This project is in an early working-draft phase.
 - Updated project status after publishing RFC-0000 as the canonical problem statement.
 - Marked RFC-0001 as the next design focus.
 - Opened initial design issues for naming, media type, Web Linking, JSON Schema, and signatures.
+- Documented the GitHub Flow contribution workflow and pre-1.0 release versioning policy.
 
 ### Notes
 
